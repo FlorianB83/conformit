@@ -6,7 +6,7 @@
     <input value="Accident avec Adelle">
 
     <h3>Description</h3>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="" id="" cols="30" rows="5"></textarea>
     <div class="schedule">
         <div class="date">
           <h3>Date</h3>
@@ -20,26 +20,52 @@
     </div>
 
     <h3>Nom du status</h3>
-    <input value="Ouvert">
+      <select v-model="selected">
+            <option disabled value="">Choisissez</option>
+            <option>Ouvert</option>
+            <option>Fermé</option>
+        </select>
 
     <h3>Employé impliqué</h3>
-    <input value="Adelle Thornburg(1868)">
+        <select v-model="selected">
+            <option disabled value="">Choisissez</option>
+            <option>Adelle Thornburg (1868)</option>
+            <option>Amara Toto (1928)</option>
+            <option>Helena Titi (1478)</option>
+        </select>
 
     <h3>Témoins</h3>
-    <input value="Mureil">
+     <div>
+     <Multiselect
+      v-model="value"
+      mode="tags"
+      placeholder="Select your characters"
+      :options="options"
+      :search="true"
+    />
+  </div>
   </div>
 </template>
 
 <script>
+import Multiselect from '@vueform/multiselect/dist/multiselect.vue2.js'
 export default {
   name: 'AccidentDetails',
   props: {
     msg: String
-  }
+  },
+ components: {Multiselect},
+    data() {
+      return {
+        value: [],
+        options: ['Batman', 'Robin', 'Joker']
+      }
+    }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style src="@vueform/multiselect/themes/default.css"></style>
 <style scoped>
 
 .schedule{
@@ -47,8 +73,9 @@ export default {
     margin: 1rem 0;
 }
 
-input, textarea{
+input, textarea, select{
     width:100%;
+    padding: 0.5rem;
 }
 
 h3, h1{
