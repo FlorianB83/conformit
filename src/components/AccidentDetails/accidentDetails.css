@@ -1,0 +1,26 @@
+.schedule{
+    display: flex;
+    margin: 1rem 0;
+}
+
+input, textarea, select{
+    width:90%;
+    padding: 0.5rem;
+}
+
+h3, h1{
+    margin: 1rem 0px;
+}
+.accidentDetails{
+    text-align: left;
+}
+.scheduleDate{
+    padding-right: 2rem;
+}
+
+.inputDate{
+    width:50%
+}
+.inputHeure{
+    width:50%
+}

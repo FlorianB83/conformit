@@ -1,0 +1,23 @@
+nav{
+    height: 80vh;
+    background-color: darkgray;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+li {
+    list-style: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border: 1px solid darkgrey;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  li:hover{
+    background-color: aquamarine;
+
+  }
+  ul {
+    padding: 0;
+  }

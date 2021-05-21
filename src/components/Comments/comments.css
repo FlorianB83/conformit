@@ -1,0 +1,66 @@
+
+.content-comments{
+    height: 80vh;
+    background-color: darkgray;
+    padding: 2rem;
+    overflow-y: scroll;
+   }
+   
+   .card{
+       background-color: white;
+       border: 1px solid darkgray;
+       margin: 2rem 0;
+       padding: 2rem;
+       position: relative;
+   }
+   
+   .icons{
+       position: absolute;
+       right: 0;
+       top:0;
+       }
+   .icons i{
+       padding: 5px;
+       }
+   
+   .date{
+        position: absolute;
+       right: 0;
+       bottom:0;
+       padding: 10px;
+       font-size: 0.8rem;
+   }
+   
+   .content{
+       display: flex;
+       align-items: center;
+   }
+   
+   .comment{
+       text-align: left;
+   }
+   
+   h5{
+       margin: 0;
+   }
+   
+   .fa-user-circle{
+       width:20%;
+       height: auto;
+       font-size: 3rem;
+       padding: 1rem;
+   }
+   
+   .fa-trash-alt{
+       color: red;
+   }
+   
+   .fa-pen{
+       color:aquamarine;
+   }
+
+   button{
+       border:none;
+       margin:2px;
+       background-color: transparent;
+   }
