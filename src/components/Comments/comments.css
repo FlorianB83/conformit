@@ -18,9 +18,11 @@
        position: absolute;
        right: 0;
        top:0;
+      
        }
    .icons i{
        padding: 5px;
+     
        }
    
    .date{
@@ -58,9 +60,13 @@
    .fa-pen{
        color:aquamarine;
    }
+   .fa-check{
+       color: blue;
+   }
 
    button{
        border:none;
        margin:2px;
        background-color: transparent;
+       cursor: pointer;
    }

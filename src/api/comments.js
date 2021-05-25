@@ -67,5 +67,7 @@ const comments = [
   removeComment(date){
    const result =  comments.filter(comment => comment.creationDate != date);
    return result;
-  }
+  },
+
+
 }
